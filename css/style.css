@@ -611,3 +611,8 @@
 .credits a {
   color: var(--color);
 }
+.timeline-img {
+  width: 400px !important;
+  height: 400px !important;
+  object-fit: cover !important;
+}
