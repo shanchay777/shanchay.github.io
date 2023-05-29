@@ -405,62 +405,44 @@
         <div class="container-fluid py-5">
             <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Activities</h1>
             <ul class="activity-ul">
+                <script>
+                    const dateTime = ["2023"];
+                    const title = ["lorem Ipsum Dolor"];
+                    const image = ["img/GD-03.jpg"];
+                    const link = ["https://www.behance.net/gallery/129551331/Snow-White-Beauty-Soap"];
+                    const caption = ["Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas itaque hic quibusdam fugiat est numquam harum"];
+
+
+                    for (
+              let i = 0;
+              i <= dateTime.length && title.length && image.length && link.length && caption.length;
+              i++
+            ) {
+              // Stop Loop from infinity
+              if (i === title.length) {
+                break;
+              }
+              // Print in web
+              document.write(`
                 <li style="--accent-color: #41516c">
-                  <div class="date">2002</div>
-                  <div class="title">Title 1</div>
-                  <div class="portfolio-item">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid timeline-img" src="img/GD-03.jpg" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/GD-03.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://www.behance.net/gallery/129551331/Snow-White-Beauty-Soap"><i class="fa fa-link"></i></a>
+                    <div class="date">${dateTime[i]}</div>
+                    <div class="title">${title[i]}</div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid timeline-img" src=${image[i]} alt="my projects">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=${image[i]} data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=${link[i]}><i class="fa fa-link"></i></a>
+                            </div>
                         </div>
                     </div>
-                  </div>
-                  <div class="descr">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas itaque
-                    hic quibusdam fugiat est numquam harum, accusamus suscipit consequatur
-                    laboriosam!
-                  </div>
+                    <div class="descr">
+                        ${caption[i]}
+                    </div>
                 </li>
-                <li style="--accent-color: #fbca3e">
-                  <div class="date">2007</div>
-                  <div class="title">Title 2</div>
-                  <img
-                    src="https://res.cloudinary.com/ds0iznryz/image/upload/v1678605477/Activites/Calender_eldh3e.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="descr">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos
-                    adipisci nobis nostrum vero nihil veniam.
-                  </div>
-                </li>
-                <li style="--accent-color: #e24a68">
-                  <div class="date">2012</div>
-                  <div class="title">Title 3</div>
-                  <div class="descr">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga minima
-                    consequuntur soluta placeat iure totam commodi repellendus ea
-                    delectus, libero fugit quod reprehenderit, sequi quo, et dolorum saepe
-                    nulla hic.
-                  </div>
-                </li>
-                <li style="--accent-color: #1b5f8c">
-                  <div class="date">2017</div>
-                  <div class="title">Title 4</div>
-                  <div class="descr">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit,
-                    cumque.
-                  </div>
-                </li>
-                <li style="--accent-color: #4cadad">
-                  <div class="date">2022</div>
-                  <div class="title">Title 5</div>
-                  <div class="descr">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, non.
-                  </div>
-                </li>
+            `);
+            }
+                </script>
               </ul>
               <a href="./activities.html" type="button" class="btn btn-light view-btn">View More</a>
         </div>
