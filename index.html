@@ -405,97 +405,76 @@
         <div class="container-fluid py-5">
             <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Activities</h1>
             <ul class="activity-ul">
-                <script>
-                    const dateTime = [
-                        "",
-                        "2023",
-                        "2022",
-                        "2022",
-                        "2021",
-                        "2020",
-                        "2019",
-                        "2018",
-                       
-                    ];
-                    const title = [
-                        "",
-                        "Testing",
-                        "testing 2",
-                        "testing 3",
-                        "testing 4",
-                        "testing 5",
-                        "testing 6",
-                        "testing 7",
-                        
-                    ];
-                    const image = [
-                    "",
-
-                        "./img/GD-01.jpg",
-                        "./img/GD-02.jpg",
-                        "./img/GD-03.jpg",
-                        "./img/GD-01.jpg",
-                        "./img/GD-03.jpg",
-                        "./img/GD-02.jpg",
-                        "./img/GD-02.jpg",
-
-                        
-                    ];
-                    const link = [
-                    "",
-
-                        "#ggg",
-                        "#jfrbhvfj",
-                        "#jfrbhvfj",
-                        "#jfrbhvfj",
-                        "#jfrbhvfj",
-                        "#jfrbhvfj",
-                        "#jfrbhvfj",
-                        
-                    ];
-                    const caption = [
-                    "",
-                        "Testing",
-                        "Testing 2",
-                        "Testing 3",
-                        "Testing 4",
-                        "Testing 5",
-                        "Testing 6",
-                        "Testing 7",
-                        
-                    ];
-                    let text = "";
-                    for (
-              let i = 0;
-              i <= dateTime.length && title.length && image.length && link.length && caption.length;
-              i++
-            ) {
-              // Stop Loop from infinity
-              if (i === title.length) {
-                break;
-              }
-              // Print in web
-              document.write(`
-                <li>
-                    <div class="date" style="
-                background-color: #00FFFF">${dateTime[i]}</div>
-                    <div class="title">${title[i]}</div>
+                <li style="--accent-color:#41516C">
+                    <div class="date">2020</div>
                     <div class="portfolio-item">
                         <div class="portfolio-img rounded overflow-hidden">
-                            <img class="img-fluid timeline-img" src=${image[i]} alt="my projects">
+                            <img class="img-fluid" src="img/GD-03.jpg" alt="">
                             <div class="portfolio-btn">
-                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=${image[i]} data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=${link[i]}><i class="fa fa-link"></i></a>
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/GD-03.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://www.behance.net/gallery/129551331/Snow-White-Beauty-Soap"><i class="fa fa-link"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="descr">
-                        ${caption[i]}
-                    </div>
+                    <div class="title">Title 1</div>
+                    <div class="descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas itaque hic quibusdam fugiat est numquam harum, accusamus suscipit consequatur laboriosam!</div>
                 </li>
-            `);
-            }
-                </script>
+                <li style="--accent-color:#FBCA3E">
+                    <div class="date">2007</div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid" src="img/GD-03.jpg" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/GD-03.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://www.behance.net/gallery/129551331/Snow-White-Beauty-Soap"><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title">Title 2</div>
+                    <div class="descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos adipisci nobis nostrum vero nihil veniam.</div>
+                </li>
+                <li style="--accent-color:#E24A68">
+                    <div class="date">2012</div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid" src="img/GD-03.jpg" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/GD-03.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://www.behance.net/gallery/129551331/Snow-White-Beauty-Soap"><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title">Title 3</div>
+                    <div class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga minima consequuntur soluta placeat iure totam commodi repellendus ea delectus, libero fugit quod reprehenderit, sequi quo, et dolorum saepe nulla hic.</div>
+                </li>
+                <li style="--accent-color:#1B5F8C">
+                    <div class="date">2017</div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid" src="img/GD-03.jpg" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/GD-03.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://www.behance.net/gallery/129551331/Snow-White-Beauty-Soap"><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title">Title 4</div>
+                    <div class="descr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, cumque.</div>
+                </li>
+                <li style="--accent-color:#4CADAD">
+                    <div class="date">2022</div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid" src="img/GD-03.jpg" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/GD-03.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://www.behance.net/gallery/129551331/Snow-White-Beauty-Soap"><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title">Title 5</div>
+                    <div class="descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, non.</div>
+                </li>
               </ul>
               <a href="#" type="button" class="btn btn-light view-btn" id="viewMore">View More</a>
         </div>
@@ -625,7 +604,7 @@
 $('.activity-ul li').hide();
 
 function showNextItems() {
-    var pagination = 5;
+    var pagination = 4;
     
     for (var i = itemsCount; i < (itemsCount + pagination); i++) {
         $('.activity-ul li:eq(' + i + ')').show();
