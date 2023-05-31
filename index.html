@@ -407,35 +407,64 @@
             <ul class="activity-ul">
                 <script>
                     const dateTime = [
-                        "2023", 
-                        "2024", 
-                        "2025", 
-                        "2026"
+                        "",
+                        "2023",
+                        "2022",
+                        "2022",
+                        "2021",
+                        "2020",
+                        "2019",
+                        "2018",
+                       
                     ];
                     const title = [
-                        "lorem Ipsum Dolor", 
-                        "freaking john don", 
-                        "Shanchay Biri Khor", 
-                        "Valo hoye jao"
+                        "",
+                        "Testing",
+                        "testing 2",
+                        "testing 3",
+                        "testing 4",
+                        "testing 5",
+                        "testing 6",
+                        "testing 7",
+                        
                     ];
                     const image = [
-                        "img/GD-03.jpg", 
-                        "img/GD-02.jpg", 
-                        "img/GD-01.jpg", 
-                        "img/MG-01.jpg"
+                    "",
+
+                        "./img/GD-01.jpg",
+                        "./img/GD-02.jpg",
+                        "./img/GD-03.jpg",
+                        "./img/GD-01.jpg",
+                        "./img/GD-03.jpg",
+                        "./img/GD-02.jpg",
+                        "./img/GD-02.jpg",
+
+                        
                     ];
                     const link = [
-                        "https://www.behance.net/gallery/129551331/Snow-White-Beauty-Soap", 
-                        "https://www.behance.net/gallery/129551331/Snow-White-Beauty-Soap", 
-                        "https://www.behance.net/gallery/129551331/Snow-White-Beauty-Soap",
-                        "https://www.behance.net/gallery/129551331/Snow-White-Beauty-Soap"
+                    "",
+
+                        "#ggg",
+                        "#jfrbhvfj",
+                        "#jfrbhvfj",
+                        "#jfrbhvfj",
+                        "#jfrbhvfj",
+                        "#jfrbhvfj",
+                        "#jfrbhvfj",
+                        
                     ];
                     const caption = [
-                        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas itaque hic quibusdam fugiat est numquam harum", 
-                        "testing Meme", 
-                        "Shanchay Meme",
-                        "Style Of bangladesh"
+                    "",
+                        "Testing",
+                        "Testing 2",
+                        "Testing 3",
+                        "Testing 4",
+                        "Testing 5",
+                        "Testing 6",
+                        "Testing 7",
+                        
                     ];
+                    let text = "";
                     for (
               let i = 0;
               i <= dateTime.length && title.length && image.length && link.length && caption.length;
@@ -447,8 +476,9 @@
               }
               // Print in web
               document.write(`
-                <li style="--accent-color: #41516c">
-                    <div class="date">${dateTime[i]}</div>
+                <li>
+                    <div class="date" style="
+                background-color: #00FFFF">${dateTime[i]}</div>
                     <div class="title">${title[i]}</div>
                     <div class="portfolio-item">
                         <div class="portfolio-img rounded overflow-hidden">
@@ -467,7 +497,7 @@
             }
                 </script>
               </ul>
-              <a href="./activities.html" type="button" class="btn btn-light view-btn">View More</a>
+              <a href="#" type="button" class="btn btn-light view-btn" id="viewMore">View More</a>
         </div>
     </div>
     <!-- activity End -->
@@ -588,6 +618,33 @@
     
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+        var itemsCount = 0,
+    itemsMax = $('.activity-ul li').length;
+$('.activity-ul li').hide();
+
+function showNextItems() {
+    var pagination = 5;
+    
+    for (var i = itemsCount; i < (itemsCount + pagination); i++) {
+        $('.activity-ul li:eq(' + i + ')').show();
+    }
+
+    itemsCount += pagination;
+    
+    if (itemsCount > itemsMax) {
+        $('#viewMore').hide();
+    }
+};
+
+showNextItems();
+
+$('#viewMore').on('click', function (e) {
+    e.preventDefault();
+    showNextItems();
+});
+    </script>
    
 
     
